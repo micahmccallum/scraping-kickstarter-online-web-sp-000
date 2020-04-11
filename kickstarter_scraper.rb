@@ -14,10 +14,9 @@ def create_project_hash
     description = project.css(".bbcard_blurb").text.strip
     location = project.css(".location-name").text.strip
     percent_funded = project.css(".funded strong").text.strip
-
-
+    projects[project] = {}
   end
-
+  projects
 
 
 
