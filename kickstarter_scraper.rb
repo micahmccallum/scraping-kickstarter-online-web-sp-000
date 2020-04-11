@@ -11,7 +11,8 @@ def create_project_hash
 
   project_list.each do |project|
     self.image_link = project.css("img").attr("src")
-    self.description = project.css(".bbcard_blurb").text"
+    self.description = project.css(".bbcard_blurb").text.strip
+    self.location = project.css(".location-name").text.strip
 
 
 
