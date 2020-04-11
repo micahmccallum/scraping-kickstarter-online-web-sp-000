@@ -10,10 +10,10 @@ def create_project_hash
   project_list = kickstarter.css(".project")
 
   project_list.each do |project|
-    self.image_link = project.css("img").attr("src")
-    self.description = project.css(".bbcard_blurb").text.strip
-    self.location = project.css(".location-name").text.strip
-    self.percent_funded = project.css(".funded strong").text.strip
+    image_link = project.css("img").attr("src")
+    description = project.css(".bbcard_blurb").text.strip
+    location = project.css(".location-name").text.strip
+    percent_funded = project.css(".funded strong").text.strip
     projects << self
     binding.pry
   end
