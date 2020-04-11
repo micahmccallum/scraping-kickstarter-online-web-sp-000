@@ -14,6 +14,9 @@ def create_project_hash
     self.description = project.css(".bbcard_blurb").text.strip
     self.location = project.css(".location-name").text.strip
     self.percent_funded = project.css(".funded strong").text.strip
+    projects << self
+    binding.pry
+  end
 
 
 
