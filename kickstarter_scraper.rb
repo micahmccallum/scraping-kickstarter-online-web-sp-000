@@ -15,13 +15,13 @@ def create_project_hash
     location = project.css(".location-name").text.strip
     percent_funded = project.css(".funded strong").text.strip
 
-    binding.pry
+
   end
 
 
 
 
-  binding.pry
+
 
 end
 
